@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -14,6 +21,95 @@ body {
   height: 720px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+}
+
+.back-icon {
+  position: absolute;
+  top: 150px;
+}
+
+ion-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.left-panel,
+.right-panel {
+  padding: 40px;
+  width: 50%;
+}
+
+.left-panel {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-panel h2 {
+  font-family: poppins;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: #00796b;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.left-panel p {
+  font-family: poppins;
+  width: 80%;
+  margin-left: 50px;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666666;
+  margin-bottom: 50px;
+}
+
+.left-panel input {
+  color: #333333;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: poppins;
+  background-color: transparent !important;
+  border-top-style: none;
+  border-bottom-style: 0.5px;
+  border-left-style: none;
+  border-right-style: none;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.left-panel button {
+  height: 50px;
+  background-color: #00796b;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.left-panel button:hover {
+  background-color: #14302f;
+}
+
+.right-panel {
+  background-color: #e9f0ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-panel h3 {
+  color: #1a3e3d;
+  font-size: 1.2em;
 }
 
 .image-section {
@@ -51,90 +147,4 @@ body {
   font-size: 2.5rem;
   color: #00796b;
   margin-top: 10px;
-}
-
-.form-section {
-  flex: 1;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.form-section h2 {
-  font-family: poppins;
-  text-align: center;
-  font-size: 2rem;
-  letter-spacing: 4px;
-  font-weight: bold;
-  color: #00796b;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.form-section p {
-  font-family: poppins;
-  width: 80%;
-  margin-left: 50px;
-  text-align: center;
-  font-size: 0.875rem;
-  color: #666666;
-  margin-bottom: 20px;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group input {
-  color: #333333;
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  font-family: poppins;
-  background-color: transparent !important;
-  border-top-style: none;
-  border-bottom-style: 0.5px;
-  border-left-style: none;
-  border-right-style: none;
-  outline: none;
-  margin-bottom: 15px;
-}
-
-.form-group .password-toggle {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  color: #666666;
-}
-
-.submit-btn {
-  height: 50px;
-  background-color: #00796b;
-  color: #ffffff;
-  padding: 10px;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  border: none;
-  border-radius: 14px;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.submit-btn:hover {
-  background-color: #005a4c;
-}
-
-.login-link {
-  margin-top: 10px;
-  text-align: center;
-  font-size: 0.875rem;
-  color: #333333;
-}
-
-.login-link a {
-  color: #00796b;
-  text-decoration: none;
 }

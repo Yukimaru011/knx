@@ -69,17 +69,7 @@ body {
   font-weight: bold;
   color: #00796b;
   text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.form-section p {
-  font-family: poppins;
-  width: 80%;
-  margin-left: 50px;
-  text-align: center;
-  font-size: 0.875rem;
-  color: #666666;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .form-group {
@@ -129,12 +119,19 @@ body {
 
 .login-link {
   margin-top: 10px;
+  margin-bottom: 0;
   text-align: center;
   font-size: 0.875rem;
   color: #333333;
 }
 
 .login-link a {
+  color: #00796b;
+  text-decoration: none;
+}
+
+.login-link span {
+  justify-content: center;
   color: #00796b;
   text-decoration: none;
 }
